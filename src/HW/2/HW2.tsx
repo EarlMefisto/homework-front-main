@@ -96,7 +96,9 @@ export const HW2 = () => {
   let [currentUsers, setCurrentUsers] = useState<UsersObjectType>(users);
 
   const filterUsers = () => {
-    const filteredUsers = users.myFriends.filter(f => f.address.city === 'Los Angeles');
+    const filteredUsers = users.myFriends.filter(
+      (u) => u.address.city === "Los Angeles"
+    );
     setCurrentUsers({ myFriends: filteredUsers });
   };
 
