@@ -24,7 +24,7 @@ export const HW3 = () => {
     const newCase = [...texts];
     newCase.push(currentText);
     setTexts(newCase);
-    setCurrentText("")
+    setCurrentText("");
   };
 
   return (
